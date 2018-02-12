@@ -133,3 +133,5 @@ BOWER_INSTALLED_APPS = (
     'jquery',
     'bootstrap'
 )
+
+SESSION_ENGINE = 'django.contrib.sessions.backends.db'
