@@ -77,10 +77,21 @@ DATETIME_FORMAT=[     # '2006-10-25 14:30:59'
     '%Y-%m-%d %H:%M:%S.%f',  # '2006-10-25
      ]
      
+#DATABASES = {
+#    'default': {
+#        'ENGINE': 'django.db.backends.sqlite3',
+#        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+#    }
+#}
+
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'd1ms7mh3m9h7k1',
+        'USER': 'ohmxcyjgampfne',
+        'HOST':'127.0.0.1',
+        'PORT': '5432',
     }
 }
 
@@ -134,4 +145,4 @@ BOWER_INSTALLED_APPS = (
     'bootstrap'
 )
 
-SESSION_ENGINE = 'django.contrib.sessions.backends.db'
+#SESSION_ENGINE = 'django.contrib.sessions.backends.db'
