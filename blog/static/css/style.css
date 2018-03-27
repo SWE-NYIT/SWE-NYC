@@ -802,3 +802,17 @@ footer .footer-manu ul li a {
 footer .footer-manu ul li a:hover {
   color: #000;
 }
+
+
+/*EVENT Fliers*/
+
+#eventFliers
+{
+  display: flex;
+  flex-direction: row;
+}
+
+.eventFlier
+{
+  max-height: 500;
+}
