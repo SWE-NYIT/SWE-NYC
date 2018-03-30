@@ -19,7 +19,6 @@
     <link rel="stylesheet" href="{% static 'css/ionicons.min.css' %}">
     <link rel="stylesheet" href="{% static 'css/animate.css' %}">
     <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
-    <link href="{% static 'fullcalendar/dist/fullcalendar.min.css' %}" rel="stylesheet" />
     
     <!-- Js -->
     <script src="{% static 'js/vendor/modernizr-2.6.2.min.js' %}"></script>
@@ -30,14 +29,12 @@
     <script href="{% static 'js/plugins.js' %}"></script>
     <script href="{% static 'js/min/waypoints.min.js' %}"></script>
     <script href="{% static 'js/jquery.counterup.js' %}"></script>
-    <script src="{% static 'js/vendor/moment.min.js' %}"></script>
+    <script src='https://fullcalendar.io/js/fullcalendar-3.1.0/lib/moment.min.js'></script>
 
-    <script class="cssdesk" src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.5.0/fullcalendar.min.js" type="text/javascript"></script>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.js'></script>
+    <link href="{% static 'fullcalendar/dist/fullcalendar.min.css' %}" rel="stylesheet" />
 
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.1.0/fullcalendar.min.js'></script>
     <script href="{% static 'js/main.js' %}"></script>
-    <script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us17.list-manage.com","uuid":"260bb7baff96efb42df0acb8a","lid":"329f44e8bd"}) })</script>
+
 
   </head>
   <body>
@@ -60,6 +57,9 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 </button>
+                <a class="navbar-brand" href="/">
+                      <img src="{% static 'img/logo.png' %}" alt="Img" width="56%">
+                </a>
               </div>
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -68,7 +68,6 @@
                     <li><a href="post_list">Blog</a></li>
                     <li><a href="events">Events</a></li>
                     <li><a href="calendar">Calendar</a></li>
-                    <li><a href="Opportunities">Opportunities</a></li>
                   </ul>
                 </div><!-- /.navbar-collapse -->
               </div><!-- /.container-fluid -->
@@ -77,156 +76,6 @@
         </div>
       </div>
     </header><!-- header close -->
-        
-    <!-- Slider Start -->
-    <section id="slider">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-10 col-md-offset-2">
-            <div class="block">
-              <h1 class="animated fadeInUp"><img src="{% static '/img/swe.png' %}" width="80%"></h1>
-              <p class="animated fadeInUp">Society of Women Engineers NYIT Manhattan Chapter</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Wrapper Start -->
-    <section id="intro">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-7 col-sm-12">
-            <div class="block">
-              <div class="section-title">
-                <h2>Our Mission:</h2>
-                <p>Stimulate women to achieve full potential in careers as engineers and leaders, expand the image of the engineering profession as a positive force in improving the quality of life, and demonstrate the value of diversity.</p>
-              </div>
-              </div>
-          </div><!-- .col-md-7 close -->
-            <div class="col-md-7 col-md-5">
-               <img src="{% static 'img/photo.png' %}" alt="Img" width="100%">
-
-          </div><!-- .col-md-5 close -->
-        </div>
-      </div>
-    </section>
-
-  <section id="feature">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6 col-md-offset-6">
-          <h2>About us:</h2>
-              <p>For more than six decades, SWE has given women engineers a unique place and voice within the engineering industry. Our organization is centered around a passion for our members' success and continues to evolve with the challenges and opportunities reflected in today's exciting engineering and technology specialties. We invite you to explore the values, principles, and priorities that guide our initiatives and learn how together, SWE can continue to make a lasting impact on the future. </p>
-          <a href="mailto:swemanhattan@nyit.edu" class="btn btn-view-works">join us</a>
-        </div>
-      </div>
-    </div>
-  </section>
-        
-    <!-- Service Start -->
-    <section id="service">
-      <div class="container">
-        <div class="row">
-          <div class="section-title">
-            <h2>Our Events</h2>
-            <p>Our SWE chapter is popular for hosting events that encourage everyone to participate. Not only technical workshops, but a large
-            variety of social events that will suit everyone are presented. The events are categorized in: technical workshops, social events, conferences, collaborations with other clubs</p>
-          </div>
-        </div>
-        <div class="row ">
-          <div class="col-sm-6 col-md-3">
-            <div class="service-item">
-              <i class="icon ion-coffee"></i>
-              <h4>Technical Workshops</h4>
-              <p>ACM and IEEE host various of workshops for students to learn more in Computer Science and Electrical Engineering. This semester: PCB, RPi, Arduino, VR, Python, Web-dev and others. </p>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-3">
-            <div class="service-item">
-              <i class="ion-compass"></i>
-              <h4>Social Events</h4>
-              <p>Engineering clubs not only host tech related events, but also have various of social events where members of UE just spend quality time together.</p>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-3">
-            <div class="service-item">
-              <i class="ion-image"></i>
-              <h4>Conference</h4>
-              <p>All clubs organize trips to their regional and national conferences. Most popular conference is NSBE regional, where members of NSBE get an opportunity to apply for jobs.</p>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-3">
-            <div class="service-item">
-              <i class="ion-earth"></i>
-              <h4>Collabs</h4>
-              <p>All of the United Engineering Clubs (ACM, IEEE, NSBE and SWE) collaborate on the events to ensure the best outcome for the student body. </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Call to action Start -->
-    <section id="call-to-action">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="block">
-              <h2>Check out our latest Instagram posts.</h2>
-              <p>We are always excited to show you what we do. Please like, follow and share our posts in order to spread our mission.</p>
-              <iframe src="https://www.powr.io/plugins/instagram-feed/view?unique_label=1170e0c9_1496207335&external_type=iframe" width="100%" height="280" frameborder="0"></iframe>
-
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-      
-       <section id="contact-form">
-                     <div class="container">
-
-      <div id="contact-box" class="row">
-              <div class="col-md-6 col-sm-12">
-                <div class="block">
-                  <h2>Follow us on social media</h2>
-                  <ul class="address-block">
-                    <li>
-                      <i class="fa fa-map-marker"></i>NYIT, EGGC, Room 603
-                    </li>
-                    <li>
-                      <i class="fa fa-envelope-o"></i><a href="mailto:swemanhattan@nyit.edu">swemanhattan@nyit.edu</a>
-                    </li>
-                    <li>
-                      <i class="fa fa-dribbble"></i><a href="http://nyit-swe.org">swe-nyit.org</a>
-                    </li>
-                  </ul>
-
-                  <ul class="social-icons">
-                    <li>
-                      <a href="https://www.instagram.com/swenyitma/"><i class="fa fa-instagram"></i></a>
-                    </li>
-                    <li>
-                      <a href="https://www.facebook.com/nyitswe/"><i class="fa fa-facebook"></i></a>
-                    </li>
-                    <li>
-                      <a href="https://github.com/SWE-NYIT/SWE-NYIT-MA"><i class="fa fa-github"></i></a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="col-md-6 col-sm-12">
-                <div class="block">
-                  <h2></h2>
-                    <div class="google-map">
-                        
-                    <img src="{% static 'img/contact.png' %}" alt="Img" width="100%">                 
-                        
-                    </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
     <!-- Content Start -->
     <section id="testimonial">
       <div class="container">
@@ -264,8 +113,70 @@
     </section>
       
 
+    <!-- Call to action Start -->
+    <section id="call-to-action">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="block">
+              <h2>Check out our latest Instagram posts.</h2>
+              <p>We are always excited to show you what we do. Please like, follow and share our posts in order to spread our mission.</p>
+              <iframe src="https://www.powr.io/plugins/instagram-feed/view?unique_label=1170e0c9_1496207335&external_type=iframe" width="100%" height="280" frameborder="0"></iframe>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+      
+       
 
 
+<section id="contact-form">
+                     <div class="container">
+
+      <div id="contact-box" class="row">
+              <div class="col-md-6 col-sm-12">
+                <div class="block">
+                  <h2>Follow us on social media</h2>
+                  <ul class="address-block">
+                    <li>
+                      <i class="fa fa-map-marker"></i>NYIT, EGGC, Room 603
+                    </li>
+                    <li>
+                      <i class="fa fa-envelope-o"></i><a href="mailto:swemanhattan@nyit.edu">swemanhattan@nyit.edu</a>
+                    </li>
+                    <li>
+                      <i class="fa fa-dribbble"></i><a href="http://nyit-swe.org">swe-nyit.org</a>
+                    </li>
+                  </ul>
+
+                  <ul class="social-icons">
+                    <li>
+                      <a href="https://www.instagram.com/swenyitma/"><i class="fa fa-instagram"></i></a>
+                    </li>
+                    <li>
+                      <a href="https://www.facebook.com/nyitswe/"><i class="fa fa-facebook"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fa fa-github"></i></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-12">
+                <div class="block">
+                  <h2></h2>
+                    <div class="google-map">
+                        
+                    <img src="{% static 'img/contact.png' %}" alt="Img" width="100%">                 
+                        
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
 
 
 
@@ -289,7 +200,11 @@
       </div>
     </footer>
             
-    
+               
+    <script class="cssdesk" src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.5.0/fullcalendar.min.js" type="text/javascript"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.js'></script>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.1.0/fullcalendar.min.js'></script>
 
 
  <script>

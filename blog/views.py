@@ -25,3 +25,6 @@ def post_detail(request, pk):
 
 def calendar(request):
     return render(request, 'blog/calendar.html')
+
+def opportunities(request):
+    return render(request, 'blog/opportunities.html')
