@@ -810,7 +810,7 @@ footer .footer-manu ul li a:hover {
 {
   display: flex;
   flex-direction: row;
-  flex-wrap: none;
+  flex-wrap: nowrap;
   overflow: scroll;
   overflow-y: hidden;  
 }
