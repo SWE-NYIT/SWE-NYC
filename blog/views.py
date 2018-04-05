@@ -11,9 +11,9 @@ def index(request):
     posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('-published_date')[:3]
     return render(request, 'blog/index.html', {'events': events,'posts': posts})
 
-def post_list(request):
-    posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('-published_date')
-    return render(request, 'blog/post_list.html', {'posts': posts})
+#def post_list(request):
+#    posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('-published_date')
+#    return render(request, 'blog/post_list.html', {'posts': posts})
 
 def events(request):
     return render(request, 'blog/Events.html')
